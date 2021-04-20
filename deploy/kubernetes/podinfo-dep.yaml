@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: podinfo
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: podinfo
@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: quay.io/stefanprodan/podinfo:3.0.0
+        #image: quay.io/stefanprodan/podinfo:3.0.0
+        image: busybox 
         ports:
         - containerPort: 3000
