@@ -4,11 +4,7 @@ kind: Deployment
 metadata:
   name: podinfo
 spec:
-<<<<<<< HEAD
   replicas: 3
-=======
-  replicas: 2
->>>>>>> 61324fc4b8c1e7cc5adcfc1ba99c9ea85671115d
   selector:
     matchLabels:
       app: podinfo
